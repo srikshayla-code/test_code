@@ -1,0 +1,17 @@
+seeds:
+  - name: accounts
+    config:
+      column_types:
+        id: varchar(20)
+
+  - name: my_seed
+    config:          
+      delimiter: "|"
+
+  - name: my_dollar_separated
+    config:          
+      delimiter: "$"
+
+  - name: my_seed_spces
+    config:    
+      delimiter: "$"

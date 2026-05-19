@@ -1,0 +1,1 @@
+select * from SAMPLE1.RAW_SCHEMA.ORDERS

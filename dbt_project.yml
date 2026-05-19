@@ -40,3 +40,11 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    macros:
+      +materialized: table
+    Datasharing:
+      +materialized: view
+      +secure: true
+      +schema: my_target_schema
+      +database: sample1
+
