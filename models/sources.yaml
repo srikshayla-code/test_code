@@ -1,0 +1,24 @@
+sources:
+  - name: src
+    database: BLACK1
+    schema: BLACK1
+    tables: 
+    - name: EMP
+  - name: src_Raw
+    database: SAMPLE
+    schema: RAW_SCHEMA
+    tables:
+    - name: ORDERS_DETAILS
+    - name: ORDERS_STG_ORDERS
+    - name: ORDERS
+  - name: src_Raw1
+    database: SAMPLE1
+    schema: DBT_SRIKSHAYLACODE
+    tables:
+    - name: EMP
+  - name: src_Ecom
+    database: SAMPLE1
+    schema: DBT_SRIKSHAYLACODE
+    tables:
+    - name: sales1
+    - name: course_it

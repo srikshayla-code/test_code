@@ -1,0 +1,25 @@
+version: 2  # Always include version at the top
+
+models:
+  - name: saless1_stg
+    description: "Staging table for sales1"
+    columns:
+      - name: id
+        description: "Primary key ID"
+        tests:
+          - not_null
+          - unique
+          - accepted_values:
+              arguments: 
+                values: [1,2,3,4,5,6,7]
+                quote: false
+
+  - name: sales_md
+    description: "Sales master data table"
+    columns:
+      - name: mail_id
+        description: "Mail identifier"
+        tests:
+          - not_null
+          - unique
+          - validate_mail
