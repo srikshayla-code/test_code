@@ -35,16 +35,35 @@ clean-targets:         # directories to be removed by `dbt clean`
 # continue to be built as views. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 
+vars: 
+  vwh: 'COMPUTE_WH'
+  default_wh: 'DX_WAREHOUSE_X'
+
 models:
   my_new_project:
-    # Applies to all files under models/example/
     example:
       +materialized: table
-    macros:
-      +materialized: table
     Datasharing:
-      +materialized: view
-      +secure: true
+      +materialized: table
       +schema: my_target_schema
       +database: sample1
+    staging:
+      +materialized: view
+      +database: sample1
+      +schema: staging_sc
+      +tags: "dbt_staging"
+    intermediate:
+      +materialized: table
+      +transient: true        
+      +schema: intermediate
+      +snowflake_warehouse: DBT_XS_WH
+      +tags: "dbt_intermediate"
+    marts:
+      +materialized: table
+      +schema: marts_sc
+      +snowflake_warehouse: DBT_M_WH      
+      +transient: false          
+      +tags: "dbt_marts"
+    
+
 
