@@ -18,7 +18,18 @@ sources:
     - name: EMP
   - name: src_Ecom
     database: SAMPLE1
-    schema: DBT_SRIKSHAYLACODE
+    schema: MY_DEV_SCHEMA
     tables:
     - name: sales1
     - name: course_it
+    - name: course_it_s
+  - name: src_Ecome
+    database: SAMPLE1
+    schema: PUBLIC
+    tables:
+    - name: CUSTOMERS_SAMPLE
+    - name: raw_employees
+    - name: Customers_sample_test
+    - name: srikanth_regex
+    - name: CUSTOMERS_SAMPLE1
+    - name: CUSTOMERS_SAMPLE2

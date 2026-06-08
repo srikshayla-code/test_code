@@ -5,3 +5,5 @@
     {{num2}} 
     {% endif %}
 {% endmacro %}
+
+select {{highest_number(3,6)}}

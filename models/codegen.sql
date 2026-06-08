@@ -1,1 +1,0 @@
-{{codegen.generate(databasename='sample1',schemaname='DBT_SRIKSHAYLACODE',source='src_Ecom')}}

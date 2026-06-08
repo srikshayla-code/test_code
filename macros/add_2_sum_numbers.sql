@@ -3,4 +3,4 @@
 
 {% endmacro %}
 
-select {{dd_sum(2,3)}}
+select {{add_sum(2,3)}}
