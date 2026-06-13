@@ -1,4 +1,4 @@
-{% snapshot my_snapshot %}
+{% snapshot deployment_testing %}
 
 {{
     config(
@@ -12,6 +12,6 @@
 }}
 
 select *
-from {{ source('src_Ecome', 'CUSTOMERS_SAMPLE') }}
+from {{ source('src_Ecome', 'CUSTOMERS_SAMPLE1') }}
 
 {% endsnapshot %}
