@@ -1,8 +1,7 @@
 
 {{
     config(
-        materialized='table',
-        schema='supreme'
+        materialized='table'
     )
 }}
 select * from 
