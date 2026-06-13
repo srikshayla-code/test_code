@@ -10,6 +10,6 @@
 }}
 
 select *
-from {{ source('src_Ecome', 'CUSTOMERS_SAMPLE') }}
+from {{ source('src_Ecome', 'CUSTOMERS_SAMPLE1') }}
 
 {% endsnapshot %}
