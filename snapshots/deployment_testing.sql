@@ -1,4 +1,4 @@
-{% snapshot my_snapshot %}
+{% snapshot deployment_testing %}
 
 {{
     config(
