@@ -2,8 +2,6 @@
 
 {{
     config(
-        target_schema='SC_SNPS',
-        target_database='DB_SNPS',
         unique_key='custid',
         strategy='check',
         check_cols=['phone'],
